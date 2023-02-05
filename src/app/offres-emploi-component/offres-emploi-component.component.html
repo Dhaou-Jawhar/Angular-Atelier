@@ -1,1 +1,12 @@
-<p>offres-emploi-component works!</p>
+
+<div class="row">
+    <div class="col-md-4" *ngFor ="let e of listEmlpois, , let i = index">
+    <div class="card" style="width: 18rem;">
+    <img src="https://static.vecteezy.com/system/resources/previews/009/665/215/original/recruitment-banner-element-design-with-a-microphone-hiring-concept-design-for-business-we-are-hiring-and-job-vacancies-element-image-open-vacancy-design-free-png.png" width="40%" height="40%" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">{{e.titre}}</h3>
+        Product N°{{i}}
+        <h5 class="card-text">reference : {{e.reference}}<h5>
+        <h5 class="card-text">entreprise : {{e.entreprise}}<h5>
+        <h5 class="card-text">etat : {{e.etat}}<h5>
+      <button class="btn btn-primary" (click)="postuler(i)" [disabled]="e.etat==false">Postuler</button>
