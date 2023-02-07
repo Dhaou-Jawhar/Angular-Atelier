@@ -19,3 +19,28 @@
 </div>
 
 <button class="btn btn-primary" (click)="calculerB()">Bilan</button>
+
+<form>
+  <input type="text" #i>
+  <button type="button" (click)="recherche(i.value)">Chercher</button>
+</form>
+
+<!-- <form>
+  <label>Rechercher par entreprise :</label>
+  <input type="text" #recherche>
+  <button type="button" (click)="rechercher(recherche.value)">Rechercher</button>
+</form>
+
+<ul>
+  <li *ngFor="let emploi of listEmlpois">
+    <p *ngIf="emploi.entreprise.includes(Entreprise)">
+      Référence : {{ emploi.reference }}
+    </p>
+    <p *ngIf="emploi.entreprise.includes(Entreprise)">
+      Titre : {{ emploi.titre }}
+    </p>
+    <p *ngIf="emploi.entreprise.includes(Entreprise)">
+      Entreprise : {{ emploi.entreprise }}
+    </p>
+  </li>
+</ul> -->
