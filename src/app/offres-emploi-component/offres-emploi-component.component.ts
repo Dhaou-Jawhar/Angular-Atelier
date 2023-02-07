@@ -8,6 +8,7 @@ import { Emploi } from '../core/model/emploi';
 })
 export class OffresEmploiComponentComponent implements OnInit {
   title:string = "Welcom";
+  nmbr:number = 5;
   listEmlpois!:Emploi[];
   constructor() { }
 
@@ -23,5 +24,20 @@ export class OffresEmploiComponentComponent implements OnInit {
   postuler(i:number){
     this.listEmlpois[i].etat==false;
 }
-
+calculerBilan() {
+  let bilan = 0;
+  for (const emploi of this.listEmlpois) {
+    if (!emploi.etat) {
+      bilan++;
+    }
+  }
+  alert(`Il y a ${bilan} offres d'emploi non clôturées.`);
 }
+
+calculerB(){
+    let bilan = this.listEmlpois.filter(e => !e.etat).length;
+    alert(`Il y a ${bilan} offres d'emploi non clôturées.`);
+  }
+}
+
+
