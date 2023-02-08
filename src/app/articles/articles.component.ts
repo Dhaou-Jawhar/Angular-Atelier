@@ -19,6 +19,9 @@ export class ArticlesComponent implements OnInit {
       {titre: "Comment écrire votre CV", contenu: "Pour réusir à décraucher un emploi...", auteur:"Marie Elsa", date:"02/04/2017", categorie:"Travail" }]
     
       this.limit = this.listeArticles.length;
+
+      let liste = this.listeArticles.filter(a => a.categorie !=='Travail').length;
+      this.limit = liste;
   }
   
 
