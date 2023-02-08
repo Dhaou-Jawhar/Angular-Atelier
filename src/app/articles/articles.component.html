@@ -15,17 +15,19 @@
         </div>
       </div>
     </div>
+    <p></p>
+    <p></p>
   </div>
 
   <div *ngFor="let article of listeArticles">
     <div *ngIf="article.categorie !== 'Travail'" style="border: 1px solid black; padding: 10px; margin: 10px;">
-      <h3 style="background-color: lightgray; padding: 10px;">{{ article.titre }}</h3>
-      <p>{{ article.contenu }}</p>
-      <p>Auteur: {{ article.auteur }}</p>
-      <p>Date: {{ article.date }}</p>
+      <h2>{{ article.titre }}</h2>
+      <h5>{{ article.contenu }}</h5>
+      <h5>Auteur: {{ article.auteur }}</h5>
+      <h5>Date: {{ article.date }}</h5>
+      <p></p>
     </div>
+    <p></p>
   </div>
 
-  
-  
   
