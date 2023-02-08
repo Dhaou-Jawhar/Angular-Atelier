@@ -17,6 +17,8 @@ export class ArticlesComponent implements OnInit {
       {titre: "Les nouveaux parents", contenu: "Les nouveaux parents. ", auteur:"Ahmed Said", date:"11/11/2018", categorie:"Education" },
       {titre: "Comment écrire votre CV", contenu: "Pour réusir à décraucher un emploi...", auteur:"Marie Elsa", date:"02/04/2017", categorie:"Travail" }]
     
+
   }
+  
 
 }
