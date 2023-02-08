@@ -22,9 +22,12 @@
   <br>
 
 
- 
+  
+  
   <input type="text" [(ngModel)]="limit">
   <br>
+  <br>
+  <h1>{{title}}</h1>
   <br>
   <div *ngFor="let article of listeArticles ">
     <div *ngIf="article.categorie !== 'Travail'" [ngClass]="{'blue-background': article.categorie === 'Education'}" style="border: 1px solid black; padding: 10px; margin: 10px;">

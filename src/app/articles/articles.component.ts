@@ -7,7 +7,7 @@ import { article } from '../core/model/article';
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent implements OnInit {
-  title:string =  'Les articles du jour';
+  title =  'Les articles du jour';
   listeArticles!:article[];
   limit!: number;
   constructor() { }
