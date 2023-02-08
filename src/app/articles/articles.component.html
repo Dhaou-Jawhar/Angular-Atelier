@@ -20,7 +20,7 @@
   </div>
 
   <div *ngFor="let article of listeArticles">
-    <div *ngIf="article.categorie !== 'Travail'" style="border: 1px solid black; padding: 10px; margin: 10px;">
+    <div *ngIf="article.categorie !== 'Travail'" [ngClass]="{'blue-background': article.categorie === 'Education'}" style="border: 1px solid black; padding: 10px; margin: 10px;">
       <h2>{{ article.titre }}</h2>
       <h5>{{ article.contenu }}</h5>
       <h5>Auteur: {{ article.auteur }}</h5>

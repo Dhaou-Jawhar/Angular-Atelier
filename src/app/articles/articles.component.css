@@ -12,3 +12,6 @@ p {
     padding: 10px;
     font-family : Arial;
 }
+.blue-background {
+    background-color: lightblue;
+  }
